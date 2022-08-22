@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;300;600&display=swap');
+
+*,*::after,*::before{box-sizing: border-box;}
+
+:root{
+    --clr-text:hsl(215, 51%, 70%);
+    --clr-bright:hsl(178, 100%, 50%);
+    --clr-shadow:hsl(217, 54%, 11%);
+    --clr-main-bg:hsl(216, 50%, 16%);
+    --clr-card-bg:hsl(215, 32%, 27%);
+}
+body{
+     font-family: 'Outfit', sans-serif;
+     background-color: var(--clr-main-bg);
+}
+.card{
+    background-color: var(--clr-card-bg);
+    width: min-content;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0px 30px 0px 15px var(--clr-shadow);
+}
+.nft{
+    width: 23rem;
+    border-radius: 8px;
+}
+h1{
+    color: white;
+    margin-block: 15px;
+}
+.text{
+    color: var(--clr-text);
+    font-size: 1.3rem;
+}
+content.p{
+    font-weight: 300;
+}
+
+.card-content{
+    padding: 25px;
+    width: min-content;
+}
+.info{
+    display:grid;
+    grid-template-columns: .9fr 1.2fr .9fr;
+    grid-template-areas: 'price blank time';
+    margin-block: 20px;
+}
+
+.price{
+    display:grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-areas: 'picon ptext';
+    grid-area: price;
+    width: 110%;
+}
+.price-icon{
+    grid-area: picon;
+    margin: auto;
+}
+.price-text{
+    grid-area: ptext;
+    font-weight: 750;
+    color: var(--clr-bright);
+    margin: auto 0;
+}
+
+.time{
+    display:grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-areas: 'ticon ttext';
+    grid-area: time;
+    width: 100%;
+    
+}
+
+.time-icon{
+    grid-area: ticon;
+    margin: auto;
+}
+.time-text{
+    grid-area: ttext;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: auto 1px;
+}
+.blank{
+    grid-area: blank;
+    font-size: 10px;
+    color: transparent;
+}
+
+.creator{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 'cimage ctext';
+    border-top: 0.1px solid hsl(217, 12%, 34%);
+    padding-top: 15px;
+}
+.creator-image{
+    grid-area: cimage;
+    width: 2rem;
+}
+.creator-text{
+grid-area: ctext;
+font-size: 1rem;
+margin: auto -15px;
+}
+.content .text{
+    margin-block: 15px;
+}
