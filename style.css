@@ -16,7 +16,8 @@ body{
 .card{
     background-color: var(--clr-card-bg);
     max-width: 400px;
-    margin: 40px auto;
+    min-width: 400px;
+    margin: 60px auto;
     border-radius: 20px;
     box-shadow: 0px 30px 0px 15px var(--clr-shadow);
 }
@@ -110,4 +111,22 @@ margin: auto -15px;
 }
 .content .text{
     margin-block: 15px;
+}
+.creator-name,.nft-name{
+    color:white ;
+    text-decoration: none;
+}
+
+/*active states*/
+
+.nft-name:hover, .creator-name:hover{
+    color: var(--clr-bright);
+}
+
+.nft:hover{
+    color: rgba(0, 255, 247,0.2);
+    content: url(/images/icon-view.svg);
+    background: var(--clr-bright);
+    mix-blend-mode:overlay;
+    cursor: pointer;
 }
